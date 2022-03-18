@@ -5,7 +5,7 @@ import Filter from './FilterBar/Filter.js'
 const Header = () => {
     return (
         <div className={cl.Container}>
-            <text className={cl.text}>Searches</text>
+            <h1 className={cl.text}>Searches</h1>
             <Filter />
         </div>
     );
