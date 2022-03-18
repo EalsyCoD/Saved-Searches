@@ -1,0 +1,136 @@
+.Container{
+    width: 1150px;
+    height: 282px;
+    background: #F7F7F7;
+    border-radius: 10px;
+    height: 282px;
+    margin:  20px auto;
+ 
+}
+.main{
+    display: flex;
+    margin: 0 0 0 374px;
+}
+
+.total{
+    width: 84px;
+    height: 24px;
+    margin: 23px 0 0 0;
+    font-weight: 800;
+    font-size: 14px;
+    font-style: normal;
+    color: #999999;
+}
+
+.changes{
+    width: 84px;
+    height: 24px;
+    margin: 23px 0 0 0;
+    margin-left: 74px;
+    font-weight: 800;
+    font-size: 14px;
+    font-style: normal;
+    color: #999999;
+}
+
+.linestyle{
+    position: absolute;
+}
+
+.line{
+    width: 1110px;
+    height: 2px;
+    margin: 20px 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.make{
+    margin: -15px 0 0 20px;
+}
+.img{
+  margin-top: 66px;
+  width: 20px;
+  height: 10px;
+  
+}
+
+.all{
+    display: flex;
+    height: 0;
+    margin-top: -20px;
+}
+
+.tdname{
+    font-family: 'Nunito Sans', sans-serif;
+    height: 24px;
+    margin-top: 60px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0493D3; 
+}
+.totallots{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 60px 0 0 355px;
+}
+.totalchange{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin: -20px 0 0 515px;
+}
+.btn{
+    padding: 15px 0 0 0;
+}
+.open{
+    position: absolute;
+    margin: -25px 0  0 856px;
+    width: 115px;
+    height: 40px;
+    border: 2px solid #0493D3;
+    border-radius: 50px; 
+    color: #0493D3;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 800;
+    &:hover{
+        color:white;
+        background-color: #0493D3 ;
+        transition: 1s;
+    }
+}
+.btnedit{
+    padding-top: 20px;
+}
+.edit{
+    position: absolute;
+    margin: -45px 0  0 981px;
+    width: 115px;
+    height: 40px;
+    background: rgba(4, 147, 211, 0.1);
+    border-radius: 50px; 
+    color: #0493D3;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 800;
+    &:hover{
+        color:white;
+        background-color: #0493D3 ;
+        transition: 1s;
+    }
+}
+
+.deleteimgD{
+ margin: -35px 0 0 1105px;
+ cursor: pointer;
+}
+
+
+
+
