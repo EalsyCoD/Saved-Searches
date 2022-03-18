@@ -1,0 +1,35 @@
+{
+    "auto":[
+    {
+        "make": "Acura",
+        "year": 2014,
+        "notifications": 1
+    },
+    {
+        "make": "Bmw",
+        "year": 2019,
+        "notifications": 0
+    },
+    {
+        "make": "Mercedes",
+        "year": 2020,
+        "notifications": 0
+    },
+    {
+        "make": "Audi",
+        "year": 2016,
+        "notifications": 0
+    },
+    {
+        "make": "Toyota",
+        "year": 2019,
+        "notifications": 0
+    },
+    {
+        "make": "Volkswagen",
+        "year": 2017,
+        "notifications": 0
+    }
+]
+}
+ 

@@ -1,7 +1,9 @@
 import React from 'react';
-
+import Header from './Components/Header/Header.js'
 const App = () => {
-  return  <div>Saved Searches</div>
+  return (
+    <Header />
+  )
 
 }
 
