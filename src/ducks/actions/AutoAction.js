@@ -29,10 +29,7 @@ const addAuto = (newMake) => {
 const updateAuto = (make) => {
   return async (dispatch) => {
     try {
-      const res = await axios.put(`/autos/${make.id}`, {
-        make: make.make,
-        notifications: !make.notifications,
-      })
+      const res = await axios.put(`/autos/${make.id}`)
       dispatch({
         type: 'UPDATE-AUTO',
         payload: make.id,

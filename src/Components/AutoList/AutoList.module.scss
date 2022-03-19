@@ -57,7 +57,7 @@
 .all{
     display: flex;
     height: 0;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 .tdname{
@@ -81,14 +81,14 @@
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    margin: -20px 0 0 515px;
+    margin: -23px 0 0 515px;
 }
 .btn{
     padding: 15px 0 0 0;
 }
 .open{
     position: absolute;
-    margin: -25px 0  0 856px;
+    margin: -21px 0  0 856px;
     width: 115px;
     height: 40px;
     border: 2px solid #0493D3;
@@ -98,6 +98,7 @@
     font-style: normal;
     font-size: 15px;
     font-weight: 800;
+    cursor: pointer;
     &:hover{
         color:white;
         background-color: #0493D3 ;
@@ -109,7 +110,7 @@
 }
 .edit{
     position: absolute;
-    margin: -45px 0  0 981px;
+    margin: -41px 0  0 981px;
     width: 115px;
     height: 40px;
     background: rgba(4, 147, 211, 0.1);
@@ -119,6 +120,7 @@
     font-style: normal;
     font-size: 15px;
     font-weight: 800;
+    cursor: pointer;
     &:hover{
         color:white;
         background-color: #0493D3 ;
@@ -127,7 +129,7 @@
 }
 
 .deleteimgD{
- margin: -35px 0 0 1105px;
+ margin: -30px 0 0 1105px;
  cursor: pointer;
 }
 

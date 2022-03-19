@@ -1,0 +1,35 @@
+.myModal {
+    position: fixed;
+    width: 1195px;
+    top: -800px;
+    bottom: 0;
+    right: 0;
+    left: 350px;
+    display: none;
+    
+    animation: ani 2s forwards;
+@keyframes ani {
+    0%{
+        transform: translateY(-120%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+}
+
+
+.myModalContent {
+    display: flex;
+    justify-content: center;
+    margin-left: -350px;
+    border-radius: 16px;
+    min-width: 250px;
+    max-height: 0px;
+}
+
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

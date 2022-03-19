@@ -13,9 +13,9 @@ const autoReducer = (state = initialState, action) => {
         case 'UPDATE-AUTO':
       return {
         ...state,
-        autos: state.autos.map((make) =>
-        make.id === action.payload
-            ? { ...make, notifications: !make.notifications }
+        autos: state.tasks.map((make) =>
+          make.id === action.payload
+            ? { ...make, completed: !make.completed }
             : make
         ),
       }
