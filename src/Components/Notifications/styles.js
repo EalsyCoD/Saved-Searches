@@ -1,26 +1,28 @@
-.container{
+import styled from 'styled-components'
+
+export const Container = styled.div`
     display: flex;
     align-items: center;
     margin: -25px 658px;
-}
+`
 
-.text{
+export const TextLabel = styled.p`
     font-weight: 600;
     padding-right: 9px;
     font-size: 16px;
     letter-spacing: 0.6px;
     text-align: right;
     color: #999999;
-}
+`
 
-.label{
+export const Label = styled.label`
     position: relative;
     display: inline-block;
     width: 50px;
     height: 26px; 
-}
+`
 
-.span{
+export const Span = styled.span`
     & {
         position: absolute;
         cursor: pointer;
@@ -43,17 +45,18 @@
         background: white;
         transition: 0.4s;
       }
-}
+`
 
-.input {
+export const Input = styled.input`
+ & {
         opacity: 0;
         width: 0;
         height: 0;
-
-      input:checked::before{
+ &:checked{
+      &:checked + ${Span}:before{
         transform: translateX(22px);
       }
-      input:checked{
-        background-color: grey;
+      &:checked + ${Span} {
+        background-color: #89CFF0;
       } 
-}
+`

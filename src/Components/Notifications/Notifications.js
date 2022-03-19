@@ -1,18 +1,20 @@
 import React from 'react';
-import cl from './Notifications.module.scss'
 
 
-const Notifications = ({toggle}) => {
+
+import { Container, TextLabel, Label, Input, Span } from './styles.js'
+
+const Notifications = ({ toggle }) => {
     
 
     return (
-        <div className={cl.container}>
-            <p className={cl.text}>Notifications</p>
-            <label className={cl.label}>
-                <input className={cl.input} type="checkbox" onChange={toggle}></input>
-                <span className={cl.span} />
-            </label>
-        </div>
+        <Container>
+            <TextLabel>Notifications</TextLabel>
+            <Label>
+                <Input type="checkbox" onChange={toggle}></Input>
+                <Span />
+            </Label>
+        </Container>
     );
 }
 

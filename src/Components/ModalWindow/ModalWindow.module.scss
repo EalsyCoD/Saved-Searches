@@ -6,16 +6,6 @@
     right: 0;
     left: 350px;
     display: none;
-    
-    animation: ani 2s forwards;
-@keyframes ani {
-    0%{
-        transform: translateY(-120%);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
 }
 
 

@@ -10,15 +10,8 @@ const autoReducer = (state = initialState, action) => {
             return{ ...state, autos: action.payload }
         case "ADD-AUTO": 
         return {...state, autos: [...state.autos, action.payload] }
-        case 'UPDATE-AUTO':
-      return {
-        ...state,
-        autos: state.tasks.map((make) =>
-          make.id === action.payload
-            ? { ...make, completed: !make.completed }
-            : make
-        ),
-      }
+        case 'EDIT-AUTO':
+            return { ...state, [state.autos.make]: action.payload  }
     case 'DELETE-AUTO': {
       return {
         ...state,

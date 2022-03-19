@@ -7,10 +7,7 @@ const Autoadd = () => {
     const [value, setValue] = useState('')
     const [value2, setValue2] = useState('')
 
-    // function getRandomInt(min, max) {
-    //     return Math.floor(Math.random() * (max - min)) + min;
-    //   }
-      
+
     const handleAdding = () => {
         const newMake = {
             make:value,

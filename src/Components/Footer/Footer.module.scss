@@ -46,9 +46,14 @@ ul{
    margin-top: 10px; 
 }
 
-li{
-padding-top: 8px;
-color: #999999;
-font-weight: 600;
-font-style: normal;
+li{   
+    cursor: pointer;
+    padding-top: 8px;
+    color: #999999;
+    font-weight: 600;
+    font-style: normal;
+    &:hover{
+    color: aqua;
+    transition: 1s ease-in;
+}
 }

@@ -31,7 +31,7 @@ const updateAuto = (make) => {
     try {
       const res = await axios.put(`/autos/${make.id}`)
       dispatch({
-        type: 'UPDATE-AUTO',
+        type: 'EDIT-AUTO',
         payload: make.id,
       })
     } catch (err) {}
