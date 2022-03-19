@@ -11,15 +11,16 @@ import AutoEdit from '../AutoEdit/AutoEdit.js'
 
 import { deleteAuto, updateAuto } from '../../ducks/actions/AutoAction.js'
 
-const Auto = (make) => {
+const Auto = () => {
     const dispatch = useDispatch()
 
-    const [modal, setModal] = useState(false)
+    
 
     
     const [searchTerm, setSearchTerm] = useState('')
 
     const autos = useSelector((state) => {
+        console.log(state.autos.autos)
         return state.autos.autos
     })
     const handleDelete = (id) => {
@@ -49,21 +50,15 @@ const Auto = (make) => {
                     <img className={cl.img} src={img} alt="img"></img>
                     </div>
                     <div className={cl.tot}>
-                    <p className={cl.totallots}>256</p>
-                    <p className={cl.totalchange}>256</p>
+                        <p className={cl.totallots}>256</p>
+                        <p className={cl.totalchange}>256</p>
                     <Notifications />
                     </div>
                     <div className={cl.btn}>
-                    <button className={cl.open} type="submit">Open</button>
+                        <button className={cl.open} type="submit">Open</button>
                     </div>
                     <div className={cl.btnedit}>
-                    <button onClick={() => {
-                        setModal(true)
-                    }} className={cl.edit} type="submit">Edit</button>
-                    <ModalWindow visible={modal} setVisible={setModal}>
-                    <AutoEdit />
-                    </ModalWindow>
-
+                        <AutoEdit auto={make}/>
                     </div>
                     <div className={cl.deleteimgD}>
                         <img onClick={() => {

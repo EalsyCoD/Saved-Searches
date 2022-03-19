@@ -46,3 +46,26 @@
     background-color: #25273c;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 }
+
+.btnedit{
+    padding-top: 20px;
+}
+.edit{
+    position: absolute;
+    margin: -41px 0  0 981px;
+    width: 115px;
+    height: 40px;
+    background: rgba(4, 147, 211, 0.1);
+    border-radius: 50px; 
+    color: #0493D3;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    &:hover{
+        color:white;
+        background-color: #0493D3 ;
+        transition: 1s;
+    }
+}

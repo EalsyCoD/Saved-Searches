@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 import axios from 'axios'
 
 
@@ -29,10 +30,10 @@ const addAuto = (newMake) => {
 const updateAuto = (make) => {
   return async (dispatch) => {
     try {
-      const res = await axios.put(`/autos/${make.id}`)
+      const res = await axios.put(`/autos/${make.id}`, make)
       dispatch({
         type: 'EDIT-AUTO',
-        payload: make.id,
+        payload: make,
       })
     } catch (err) {}
   }
