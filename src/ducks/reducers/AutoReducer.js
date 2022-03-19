@@ -1,6 +1,7 @@
 
 const initialState = {
  autos: [],
+ text: ''
 }
 
 
@@ -11,7 +12,9 @@ const autoReducer = (state = initialState, action) => {
         case "ADD-AUTO": 
         return {...state, autos: [...state.autos, action.payload] }
         case 'EDIT-AUTO':
-            return { ...state, [state.autos.make]: action.payload  }
+         return {autos: state.autos.map((auto) => auto.id
+           === action.payload.id 
+           ? { ...action.payload } : auto )}
     case 'DELETE-AUTO': {
       return {
         ...state,

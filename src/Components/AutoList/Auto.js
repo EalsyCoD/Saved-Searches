@@ -4,12 +4,19 @@ import { useDispatch ,useSelector } from 'react-redux'
 import cl from './AutoList.module.scss'
 import img from '../../images/Vector.svg'
 import deleteimg from '../../images/delete.svg'
+
 import Notifications from '../Notifications/Notifications.js'
+import ModalWindow from '../ModalWindow/ModalWindow.js'
+import AutoEdit from '../AutoEdit/AutoEdit.js'
+
 import { deleteAuto, updateAuto } from '../../ducks/actions/AutoAction.js'
 
-const Auto = () => {
+const Auto = (make) => {
     const dispatch = useDispatch()
 
+    const [modal, setModal] = useState(false)
+
+    
     const [searchTerm, setSearchTerm] = useState('')
 
     const autos = useSelector((state) => {
@@ -18,8 +25,8 @@ const Auto = () => {
     const handleDelete = (id) => {
         dispatch(deleteAuto(id))
     }
-    const handleEdit = (id) => {
-        dispatch(updateAuto(id))
+    const handleEdit = (make) => {
+        dispatch(updateAuto(make))
     }
     return (
         <>
@@ -44,16 +51,19 @@ const Auto = () => {
                     <div className={cl.tot}>
                     <p className={cl.totallots}>256</p>
                     <p className={cl.totalchange}>256</p>
-                    </div>
                     <Notifications />
+                    </div>
                     <div className={cl.btn}>
                     <button className={cl.open} type="submit">Open</button>
                     </div>
                     <div className={cl.btnedit}>
-                    <button onClick={handleEdit} className={cl.edit} type="submit">Edit</button>
-                    {/* <ModalWindow visible={modal} setVisible={setModal}>
+                    <button onClick={() => {
+                        setModal(true)
+                    }} className={cl.edit} type="submit">Edit</button>
+                    <ModalWindow visible={modal} setVisible={setModal}>
                     <AutoEdit />
-                    </ModalWindow> */}
+                    </ModalWindow>
+
                     </div>
                     <div className={cl.deleteimgD}>
                         <img onClick={() => {
