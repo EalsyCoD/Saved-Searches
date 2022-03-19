@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux'
 
 import Header from './Components/Header/Header.js'
 import AutoList from './Components/AutoList/AutoList.js'
+import Footer from './Components/Footer/Footer.js'
+
 import { initAuto } from './ducks/actions/AutoAction.js'
 
 
@@ -19,6 +21,7 @@ useEffect(() => {
     <>
     <Header />
     <AutoList />
+    <Footer />
     </>
   )
 }
