@@ -52,7 +52,7 @@
 }
 .edit{
     position: absolute;
-    margin: -48px 0  0 981px;
+    margin: -50px 0  0 981px;
     width: 115px;
     height: 40px;
     background: rgba(4, 147, 211, 0.1);
@@ -67,5 +67,8 @@
         color:white;
         background-color: #0493D3 ;
         transition: 1s;
+    }
+    @media (max-width: 425px){
+        margin-top: -42px;
     }
 }
