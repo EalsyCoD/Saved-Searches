@@ -8,7 +8,7 @@
     margin-left: 20px;
   }
   @media (max-width: 768px) {
-    width: 768px;
+    width: 747px;
   }
   @media (max-width: 425px) {
     margin-left: 40px;
@@ -32,24 +32,25 @@
 .block1 {
   padding: 33px 0 0 23px;
   @media (max-width: 425px) {
-    margin: 0 0 0 150px;
+    margin: 0 0 0 180px;
   }
 }
 
 .block2 {
   padding: 33px 0 0 230px;
   @media (max-width: 768px) {
-    margin: 0 0 0 -60px;
+    margin: 0 0 0 -30px;
   }
 }
 
 .block3 {
-  padding: 33px 0 0 260px;
+  padding: 33px 0 0 200px;
   @media (max-width: 768px) {
-    margin: 0 0 0 -180px;
+    width: 100px;
+    margin: 0 0 0 -140px;
   }
   @media (max-width: 425px) {
-    margin: -10px 0 0 -90px;
+    margin: -10px 0 0 0px;
   }
 }
 
@@ -60,7 +61,7 @@ h1 {
   font-size: 16px;
   color: #ffffff;
   @media (max-width: 425px) {
-    margin-left: -130px;
+    margin-left: -160px;
   }
 }
 
@@ -71,32 +72,34 @@ h2 {
   font-size: 16px;
   color: #ffffff;
   @media (max-width: 425px) {
-    margin-left: -120px;
+    margin-left: -160px;
   }
 }
 
 h3 {
+  width: 70px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   color: #ffffff;
   @media (max-width: 425px) {
-    margin-left: -120px;
+    margin-left: -115px;
   }
 }
 
 ul {
   margin-top: 10px;
   @media (max-width: 768px) {
-    width: 180px;
+    width: 150px;
   }
   @media (max-width: 425px) {
-    margin-left: -150px;
+    margin-left: -130px;
   }
 }
 
 li {
+  width: 110px;
   cursor: pointer;
   padding-top: 8px;
   color: #999999;
@@ -106,4 +109,5 @@ li {
     color: aqua;
     transition: 1s ease-in;
   }
+  
 }

@@ -10,7 +10,7 @@
     margin-left: 20px;
   }
   @media (max-width: 768px) {
-    width: 768px;
+    width: 745px;
     margin-left: 20px;
   }
   @media (max-width: 425px) {
@@ -26,7 +26,14 @@
     margin-left: 220px;
   }
   @media (max-width: 768px) {
-    margin-left: 155px;
+    width: 600px;
+    margin-left: 0px;
+    padding-left: 155px;
+  }
+  @media (max-width: 425px) {
+    width: 425px;
+    margin-left: -40px;
+    padding-left: 200px;
   }
 }
 .btns {
@@ -34,6 +41,7 @@
     margin-left: -160px;
   }
   @media (max-width: 768px) {
+    width: 700px;
     margin-left: -400px;
   }
 }
@@ -80,10 +88,11 @@
   margin: 20px 20px;
   background: rgba(0, 0, 0, 0.1);
   @media (max-width: 1024px) {
+    margin-top: 10px;
     width: 960px;
   }
   @media (max-width: 768px) {
-    width: 710px;
+    width: 700px;
   }
   @media (max-width: 425px) {
     width: 340px;
@@ -117,7 +126,8 @@
     margin-left: -140px;
   }
   @media (max-width: 768px) {
-    margin-left: -370px;
+    width: 700px;
+    margin-left: -380px;
   }
   @media (max-width: 425px) {
     margin-left: -560px;
@@ -132,6 +142,9 @@
   font-size: 16px;
   line-height: 24px;
   color: #0493d3;
+  @media (max-width: 425px){
+    margin-left: -125px;
+  }
 }
 .totallots {
   font-family: "Nunito";
@@ -226,23 +239,17 @@
   position: absolute;
   width: 260px;
   height: 40px;
-  margin: -90px 0 0 865px;
+  margin: -85px 0 0 860px;
   padding: 9px 0 9px 12px;
   border: 1px solid rgba(170, 170, 170, 0.13);
   border-radius: 5px;
   @media (max-width: 1024px) {
-    position: relative;
-    top: -80px;
-    right: 150px;
+    right: 20px;
   }
   @media (max-width: 768px) {
-    position: relative;
-    top: -80px;
-    right: 380px;
+    right: 5px;
   }
   @media (max-width: 425px) {
-    position: relative;
-    top: -80px;
-    right: 765px;
+    right: 10px;
   }
 }
