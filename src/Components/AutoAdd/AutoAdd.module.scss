@@ -1,48 +1,47 @@
-.container{
-    position: absolute;
-    width: 400px;
-    display: flex;
-    margin: 20px 0 0 350px;
-    padding: 20px 0 20px 25px;
-    background-color: #25273c;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+.container {
+  position: absolute;
+  width: 400px;
+  display: flex;
+  margin: 20px 0 0 350px;
+  padding: 20px 0 20px 25px;
+  background-color: #25273c;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
-
-.button{
-    width: 25px;
-    height: 25px;
-    margin-right: 1.5em;
-    border: 1.5px solid #25273c;
-    border-radius: 50%;
-    background-color: hsl(236, 33%, 92%);
-    cursor: pointer;
+.button {
+  width: 25px;
+  height: 25px;
+  margin-right: 1.5em;
+  border: 1.5px solid #25273c;
+  border-radius: 50%;
+  background-color: hsl(236, 33%, 92%);
+  cursor: pointer;
 }
 
-.input{
-    width: 90%;
-    outline: none;
-    border: none;
-    color: hsl(236, 33%, 92%);
-    background-color: #25273c;
-    font-size: 1rem;
+.input {
+  width: 90%;
+  outline: none;
+  border: none;
+  color: hsl(236, 33%, 92%);
+  background-color: #25273c;
+  font-size: 1rem;
 }
-.input1{
-    width: 90%;
-    outline: none;
-    border: none;
-    color: hsl(236, 33%, 92%);
-    background-color: #25273c;
-    font-size: 1rem;
+.input1 {
+  width: 90%;
+  outline: none;
+  border: none;
+  color: hsl(236, 33%, 92%);
+  background-color: #25273c;
+  font-size: 1rem;
 }
 
-.inputyear{
-    position: absolute;
-    width: 400px;
-    display: flex;
-    margin: 45px 0 0 -25px;
-    padding: 20px 0 20px 75px;
-    border-radius: 2px;
-    background-color: #25273c;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+.inputyear {
+  position: absolute;
+  width: 400px;
+  display: flex;
+  margin: 45px 0 0 -25px;
+  padding: 20px 0 20px 75px;
+  border-radius: 2px;
+  background-color: #25273c;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 }

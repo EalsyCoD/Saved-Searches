@@ -1,54 +1,53 @@
 /* eslint-disable no-unused-vars */
 
-import axios from 'axios'
-
+import axios from "axios";
 
 const initAuto = () => {
-    return async (dispatch) => {
-      try {
-        const res = await axios.get('/autos')
-        dispatch({
-          type: 'INIT-AUTO',
-          payload: res.data,
-        })
-      } catch (err) {}
-    }
-  }
+  return async (dispatch) => {
+    try {
+      const res = await axios.get("/autos");
+      dispatch({
+        type: "INIT-AUTO",
+        payload: res.data,
+      });
+    } catch (err) {}
+  };
+};
 
 const addAuto = (newMake) => {
-    return async (dispatch) => {
-        try{
-            const res = await axios.post('/autos', newMake)
-            dispatch({
-                type: 'ADD-AUTO',
-                payload: res.data
-            })
-        } catch(err){}
-    }
-}
+  return async (dispatch) => {
+    try {
+      const res = await axios.post("/autos", newMake);
+      dispatch({
+        type: "ADD-AUTO",
+        payload: res.data,
+      });
+    } catch (err) {}
+  };
+};
 
 const updateAuto = (make) => {
   return async (dispatch) => {
     try {
-      const res = await axios.put(`/autos/${make.id}`, make)
+      const res = await axios.put(`/autos/${make.id}`, make);
       dispatch({
-        type: 'EDIT-AUTO',
+        type: "EDIT-AUTO",
         payload: make,
-      })
+      });
     } catch (err) {}
-  }
-}
+  };
+};
 
 const deleteAuto = (id) => {
   return async (dispatch) => {
     try {
-      await axios.delete(`/autos/${id}`)
+      await axios.delete(`/autos/${id}`);
       dispatch({
-        type: 'DELETE-AUTO',
+        type: "DELETE-AUTO",
         payload: id,
-      })
+      });
     } catch (err) {}
-  }
-}
+  };
+};
 
-export { initAuto, addAuto, updateAuto, deleteAuto }
+export { initAuto, addAuto, updateAuto, deleteAuto };

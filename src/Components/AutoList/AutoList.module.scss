@@ -1,253 +1,248 @@
-.Container{
-    width: 1150px;
-    height: 282px;
-    background: #F7F7F7;
-    border-radius: 10px;
+.Container {
+  width: 1150px;
+  height: 282px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  height: 100%;
+  margin: 20px auto;
+  @media (max-width: 1024px) {
+    width: 1000px;
+    margin-left: 20px;
+  }
+  @media (max-width: 768px) {
+    width: 768px;
+    margin-left: 20px;
+  }
+  @media (max-width: 425px) {
+    width: 380px;
     height: 100%;
-    margin:  20px auto;
- @media (max-width: 1024px){
-     width: 1000px;
-     margin-left: 20px;
- }
- @media (max-width: 768px){
-     width: 768px;
-     margin-left: 20px;
- }
- @media (max-width: 425px){
-     width: 380px;
-     height: 100%;
-     margin-left: 25px;
- }
-
+    margin-left: 25px;
+  }
 }
-.main{
-    display: flex;
-    margin: 0 0 0 374px;
-    @media (max-width: 1024px){
-        margin-left: 220px;
-    }
-    @media (max-width: 768px){
-        margin-left: 155px;
-    }
+.main {
+  display: flex;
+  margin: 0 0 0 374px;
+  @media (max-width: 1024px) {
+    margin-left: 220px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 155px;
+  }
 }
-.btns{
-    @media (max-width: 1024px){
-        margin-left: -160px;
-    }
-    @media (max-width: 768px){
-        margin-left: -400px;
-    }
+.btns {
+  @media (max-width: 1024px) {
+    margin-left: -160px;
+  }
+  @media (max-width: 768px) {
+    margin-left: -400px;
+  }
 }
-.total{
-    width: 84px;
-    height: 24px;
-    margin: 23px 0 0 0;
-    font-weight: 800;
-    font-size: 14px;
-    font-style: normal;
-    color: #999999;
-    @media (max-width: 768px){
-       margin-left: -5px;
-    }
-    @media (max-width: 425px){
-       margin-left: -120px;
-    }
+.total {
+  width: 84px;
+  height: 24px;
+  margin: 23px 0 0 0;
+  font-weight: 800;
+  font-size: 14px;
+  font-style: normal;
+  color: #999999;
+  @media (max-width: 768px) {
+    margin-left: -5px;
+  }
+  @media (max-width: 425px) {
+    margin-left: -120px;
+  }
 }
 
-.changes{
-    width: 84px;
-    height: 24px;
-    margin: 23px 0 0 0;
-    margin-left: 74px;
-    font-weight: 800;
-    font-size: 14px;
-    font-style: normal;
-    color: #999999;
-    @media (max-width: 768px){
-        margin-left: 10px;
-     }
-     @media (max-width: 425px){
-        margin-left: 150px;
-     }
+.changes {
+  width: 84px;
+  height: 24px;
+  margin: 23px 0 0 0;
+  margin-left: 74px;
+  font-weight: 800;
+  font-size: 14px;
+  font-style: normal;
+  color: #999999;
+  @media (max-width: 768px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 425px) {
+    margin-left: 150px;
+  }
 }
 
-.linestyle{
-    position: absolute;
+.linestyle {
+  position: absolute;
 }
 
-.line{
-    width: 1110px;
-    height: 2px;
-    margin: 20px 20px;
-    background: rgba(0, 0, 0, 0.1);
-    @media (max-width: 1024px){
-        width: 960px;
-    }
-    @media (max-width: 768px){
-        width: 710px; 
-    }
-    @media (max-width: 425px){
-        width: 340px;
-    }
+.line {
+  width: 1110px;
+  height: 2px;
+  margin: 20px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  @media (max-width: 1024px) {
+    width: 960px;
+  }
+  @media (max-width: 768px) {
+    width: 710px;
+  }
+  @media (max-width: 425px) {
+    width: 340px;
+  }
 }
 
-.make{
-    margin: -15px 0 0 20px;
+.make {
+  margin: -15px 0 0 20px;
 }
-.img{
+.img {
   margin-top: 66px;
   width: 20px;
   height: 10px;
-  
 }
 
-.all{
-    display: flex;
-    height: 0;
+.all {
+  display: flex;
+  height: 0;
+  margin-top: -10px;
+  @media (max-width: 1024px) {
+    margin-top: -25px;
+    margin-left: 20px;
+  }
+  @media (max-width: 425px) {
+    margin-left: 230px;
     margin-top: -10px;
-    @media (max-width: 1024px){
-        margin-top: -25px;
-        margin-left: 20px;
-    }
-    @media (max-width: 425px){
-        margin-left: 230px;
-        margin-top: -10px;
-    }
-
+  }
 }
-.tot{
-    @media (max-width: 1024px){
-        margin-left: -140px;
-    }
-    @media (max-width: 768px){
-        margin-left: -370px;
-    }
-    @media (max-width: 425px){
-        margin-left: -560px;
-        margin-top: 100px;
-    }
+.tot {
+  @media (max-width: 1024px) {
+    margin-left: -140px;
+  }
+  @media (max-width: 768px) {
+    margin-left: -370px;
+  }
+  @media (max-width: 425px) {
+    margin-left: -560px;
+    margin-top: 100px;
+  }
 }
-.tdname{
-    font-family: 'Nunito Sans', sans-serif;
-    height: 24px;
-    margin-top: 60px;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-    color: #0493D3; 
+.tdname {
+  font-family: "Nunito Sans", sans-serif;
+  height: 24px;
+  margin-top: 60px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0493d3;
 }
-.totallots{
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    margin: 60px 0 0 355px;
-    @media (max-width: 768px){
-        margin-left: 540px;
-    }
-    @media (max-width: 425px){
-        margin-left: 830px;
-    }
+.totallots {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 60px 0 0 355px;
+  @media (max-width: 768px) {
+    margin-left: 540px;
+  }
+  @media (max-width: 425px) {
+    margin-left: 830px;
+  }
 }
-.totalchange{
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    margin: -23px 0 0 515px;
-    @media (max-width: 768px){
-        margin-left: 610px;
-    }
-    @media (max-width: 425px){
-        margin-left: 610px;
-    }
+.totalchange {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin: -23px 0 0 515px;
+  @media (max-width: 768px) {
+    margin-left: 610px;
+  }
+  @media (max-width: 425px) {
+    margin-left: 610px;
+  }
 }
-.btn{
-    padding: 15px 0 0 0;
+.btn {
+  padding: 15px 0 0 0;
 }
-.open{
-    position: absolute;
-    margin: -28px 0  0 856px;
-    width: 115px;
-    height: 40px;
-    border: 2px solid #0493D3;
-    border-radius: 50px; 
-    color: #0493D3;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 800;
-    cursor: pointer;
-    &:hover{
-        color:white;
-        background-color: #0493D3 ;
-        transition: 1s;
-    }
-    @media (max-width: 425px){
-        margin-top: 20px;
-        margin-left: 410px;
-    }
-    
+.open {
+  position: absolute;
+  margin: -28px 0 0 856px;
+  width: 115px;
+  height: 40px;
+  border: 2px solid #0493d3;
+  border-radius: 50px;
+  color: #0493d3;
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: #0493d3;
+    transition: 1s;
+  }
+  @media (max-width: 425px) {
+    margin-top: 20px;
+    margin-left: 410px;
+  }
 }
-.btnedit{
-    padding-top: 20px;
-    @media (max-width: 425px){
-        margin-top: 40px;
-        margin-left: -390px;
-    }
+.btnedit {
+  padding-top: 20px;
+  @media (max-width: 425px) {
+    margin-top: 40px;
+    margin-left: -390px;
+  }
 }
-.edit{
-    position: absolute;
-    margin: -41px 0  0 981px;
-    width: 115px;
-    height: 40px;
-    background: rgba(4, 147, 211, 0.1);
-    border-radius: 50px; 
-    color: #0493D3;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 800;
-    cursor: pointer;
-    &:hover{
-        color:white;
-        background-color: #0493D3 ;
-        transition: 1s;
-    }
+.edit {
+  position: absolute;
+  margin: -41px 0 0 981px;
+  width: 115px;
+  height: 40px;
+  background: rgba(4, 147, 211, 0.1);
+  border-radius: 50px;
+  color: #0493d3;
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: #0493d3;
+    transition: 1s;
+  }
 }
 
-.deleteimgD{
- margin: -30px 0 0 1105px;
- cursor: pointer;
- @media (max-width: 425px){
-     position: absolute;
-     margin-top: -30px;
-     margin-left: 550px;
-}
+.deleteimgD {
+  margin: -30px 0 0 1105px;
+  cursor: pointer;
+  @media (max-width: 425px) {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 550px;
+  }
 }
 
-.input{
-    position: absolute;
-    width: 260px;
-    height: 40px;
-    margin: -90px 0 0 865px;
-    padding: 9px 0 9px 12px;
-    border: 1px solid rgba(170,170,170,0.13);
-    border-radius: 5px;
-    @media (max-width: 1024px){
-        position: relative;
-        top: -80px;
-        right: 150px;
-        
-    }
-    @media (max-width: 768px){
-        position: relative;
-        top: -80px;
-        right: 380px;  
-    }
-    @media (max-width: 425px){
-        position: relative;
-        top: -80px;
-        right: 765px;  
-    }
+.input {
+  position: absolute;
+  width: 260px;
+  height: 40px;
+  margin: -90px 0 0 865px;
+  padding: 9px 0 9px 12px;
+  border: 1px solid rgba(170, 170, 170, 0.13);
+  border-radius: 5px;
+  @media (max-width: 1024px) {
+    position: relative;
+    top: -80px;
+    right: 150px;
+  }
+  @media (max-width: 768px) {
+    position: relative;
+    top: -80px;
+    right: 380px;
+  }
+  @media (max-width: 425px) {
+    position: relative;
+    top: -80px;
+    right: 765px;
+  }
 }

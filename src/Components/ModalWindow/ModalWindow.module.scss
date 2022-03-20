@@ -1,42 +1,40 @@
 .myModal {
-    position: fixed;
-    width: 1195px;
-    top: -800px;
-    bottom: 0;
-    right: 0;
-    left: 350px;
-    display: none;
+  position: fixed;
+  width: 1195px;
+  top: -800px;
+  bottom: 0;
+  right: 0;
+  left: 350px;
+  display: none;
 }
 
-
 .myModalContent {
-    display: flex;
-    justify-content: center;
-    margin-left: -350px;
-    border-radius: 16px;
-    min-width: 250px;
-    max-height: 0px;
+  display: flex;
+  justify-content: center;
+  margin-left: -350px;
+  border-radius: 16px;
+  min-width: 250px;
+  max-height: 0px;
 }
 
 .myModal.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 1024px){
-        position: absolute;
-        margin-top: -350px;
-        width: 15rem;
-        
-    }
-    @media (max-width: 768px){
-        position: absolute;
-        margin-top: -350px;
-        margin-left: -250px;   
-    }
-    @media (max-width: 425px){
-        position: absolute;
-        width: 250px;
-        margin-top: 80px;
-        margin-left: -260px;   
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1024px) {
+    position: absolute;
+    margin-top: -350px;
+    width: 15rem;
+  }
+  @media (max-width: 768px) {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: -250px;
+  }
+  @media (max-width: 425px) {
+    position: absolute;
+    width: 250px;
+    margin-top: 80px;
+    margin-left: -260px;
+  }
 }

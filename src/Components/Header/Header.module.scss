@@ -1,40 +1,40 @@
 .Container {
-    width: 1195px;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 30px 0 25px;
-    margin: auto; 
-    @media (min-width: 1024px) {
-        width: 50em;
-        padding: 100px 0  0 0;
-      }
-    @media (max-width: 768px) {
-        width: 45rem;
-        padding: 100px 0  0 0;
-      }
-    @media (max-width: 425px) {
-        padding: 100px 0  0 20px;
-      }
+  width: 1195px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px 0 25px;
+  margin: auto;
+  @media (min-width: 1024px) {
+    width: 50em;
+    padding: 100px 0 0 0;
+  }
+  @media (max-width: 768px) {
+    width: 45rem;
+    padding: 100px 0 0 0;
+  }
+  @media (max-width: 425px) {
+    padding: 100px 0 0 20px;
+  }
 }
 .text {
-    margin-top: 10px;
-    color: grey;
+  margin-top: 10px;
+  color: grey;
 }
 
-.button{
-    width: 120px;
-    height: 40px;
-    border: 2px solid #0493D3;
-    border-radius: 50px; 
-    color: #0493D3;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 800;
-    cursor: pointer;
-    &:hover{
-        color:white;
-        background-color: #0493D3 ;
-        transition: 1s;
-    }
+.button {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #0493d3;
+  border-radius: 50px;
+  color: #0493d3;
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: #0493d3;
+    transition: 1s;
+  }
 }
