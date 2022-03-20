@@ -22,4 +22,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1024px){
+        position: absolute;
+        margin-top: -350px;
+        width: 15rem;
+        
+    }
+    @media (max-width: 768px){
+        position: absolute;
+        margin-top: -350px;
+        margin-left: -250px;   
+    }
+    @media (max-width: 425px){
+        position: absolute;
+        width: 250px;
+        margin-top: 80px;
+        margin-left: -260px;   
+    }
 }

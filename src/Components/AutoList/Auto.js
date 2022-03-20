@@ -6,10 +6,9 @@ import img from '../../images/Vector.svg'
 import deleteimg from '../../images/delete.svg'
 
 import Notifications from '../Notifications/Notifications.js'
-import ModalWindow from '../ModalWindow/ModalWindow.js'
 import AutoEdit from '../AutoEdit/AutoEdit.js'
 
-import { deleteAuto, updateAuto } from '../../ducks/actions/AutoAction.js'
+import { deleteAuto } from '../../ducks/actions/AutoAction.js'
 
 const Auto = () => {
     const dispatch = useDispatch()
@@ -20,19 +19,15 @@ const Auto = () => {
     const [searchTerm, setSearchTerm] = useState('')
 
     const autos = useSelector((state) => {
-        console.log(state.autos.autos)
         return state.autos.autos
     })
     const handleDelete = (id) => {
         dispatch(deleteAuto(id))
     }
-    const handleEdit = (make) => {
-        dispatch(updateAuto(make))
-    }
     return (
         <>
         <div className={cl.make}>
-           <div className={cl.tdoby}>
+           <div className={cl.tbody}>
            <input onChange={event => {setSearchTerm(event.target.value)}}
             className={cl.input} type="text" placeholder={'Car'}></input> 
                {autos.filter((make) => {
@@ -54,6 +49,7 @@ const Auto = () => {
                         <p className={cl.totalchange}>256</p>
                     <Notifications />
                     </div>
+                    <div className={cl.btns}>
                     <div className={cl.btn}>
                         <button className={cl.open} type="submit">Open</button>
                     </div>
@@ -64,6 +60,7 @@ const Auto = () => {
                         <img onClick={() => {
                             handleDelete(make.id)
                         }} src={deleteimg} alt="delete"></img>
+                        </div>
                     </div>
                    </div>
                ))}

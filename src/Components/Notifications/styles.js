@@ -4,6 +4,12 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     margin: -25px 658px;
+    @media (max-width: 1024px){
+      width: 7em;
+    }
+    @media (max-width: 768px){
+      width: 5em;
+    }
 `
 
 export const TextLabel = styled.p`

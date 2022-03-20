@@ -10,7 +10,6 @@ const AutoEdit = (auto, classEdit) => {
     const [modal, setModal] = useState(false)
 
     const handleEdit = (auto) => {
-        console.log('edit', auto)
         const makeEdit = {
             ...auto,
             make: edit.make,
@@ -29,7 +28,7 @@ const AutoEdit = (auto, classEdit) => {
 
        <Modalwindow visible={modal} setVisible={setModal}>
         
-        <div className={cl.container} onClick={() => {console.log('click auto', auto)}}>
+        <div className={cl.container} >
             <button className={cl.button} type="submit" onClick={() => handleEdit(auto.auto)}></button>
             <input className={cl.input} type="text" value={edit.make} onChange={e => setEdit({
                 ...edit, make: e.target.value

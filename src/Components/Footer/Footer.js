@@ -3,6 +3,7 @@ import cl from './Footer.module.scss'
 const Footer = () => {
     return (
         <div className={cl.container}>
+            <div className={cl.Wrapper}>
             <div className={cl.block1}>
            <h1>Reports</h1> 
            <ul>
@@ -30,6 +31,7 @@ const Footer = () => {
                <li>FAQ</li>
                <li>Affilate</li>
            </ul>
+           </div>
            </div>
         </div>
     );

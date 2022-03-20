@@ -1,24 +1,22 @@
 {
-    "autos":[
+  "autos": [
     {
-        "id": 1,
-        "make": "Acura",
-        "year": 2014,
-        "notifications": true
+      "id": 1,
+      "make": "Mercedes",
+      "year": 1990,
+      "notifications": false
     },
     {
-        "id": 2,
-        "make": "Bmw",
-        "year": 2019,
-        "notifications": false
+      "id": 2,
+      "make": "Audi",
+      "year": "2000",
+      "notifications": false
     },
     {
-        "id": 3,
-        "make": "Mercedes",
-        "year": 2020,
-        "notifications": false
+      "make": "Toyota",
+      "year": "2022",
+      "notifications": false,
+      "id": 3
     }
-    
-]
+  ]
 }
- 
